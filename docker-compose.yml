@@ -1,0 +1,23 @@
+# docker-compose.yml
+# This version targets Docker Compose V3.8 or newer for best features.
+version: '3.8'
+
+services:
+  upsonic_agent:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+
+    container_name: upsonic-agent-app
+
+    working_dir: /app
+
+    volumes:
+      - .:/app
+
+    command: python -m src.app.agent
+
+
+volumes:
+  upsonic_uv_cache:
+    driver: local

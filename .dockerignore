@@ -1,0 +1,48 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+.env
+
+# Jupyter, IPython, etc.
+.ipynb_checkpoints/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Git & VCS
+.git/
+.gitignore
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+
+# Cache & build
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+*.bak
+
+# pyenv & poetry
+.python-version
+poetry.lock
+
+# Compiled wheels or uv cache
+*.whl
+__pypackages__/
+.uv/
+
+# Misc
+src/app/result.md
